@@ -6,6 +6,11 @@
     <title>Django TextUtils</title>
 </head>
 <body>
-    <h1>Welcome to TextUtils</h1>
+    <h1>Welcome to the TextAnalyzer. Enter your text below</h1>
+<form action="/analyze" method="get">
+    <textarea name = 'text' style='width: 1139px; height: 262px;'></textarea>
+    <input type='checkbox' name='removepunc'>Remove Punctuations<br>
+    <button type='submit'>Analyze Text</button>
+</form>
 </body>
 </html>
