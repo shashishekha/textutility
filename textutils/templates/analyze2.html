@@ -43,38 +43,16 @@
    
 </nav>
 <div class="alert alert-success alert-dismissible fade show" role="alert">
-  <strong>Welcome to Textutils!</strong> You can do anything with text.
+  <strong>Success!</strong> The text has been analyzed.
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 <div class="container">
+    <h1>Your Analyzed Text - {{ purpose }}</h1>
 
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Enter Your Text Here!</label>
-  <textarea name = 'text' class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
+   <p>
+    {{ analyzed_text }}
+   </p>
 
-<div class="form-check form-switch">
-  <input name ='removepunc' class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault1">
-  <label class="form-check-label" for="switchCheckDefault">Remove Punctuations</label>
-</div>
-<div class="form-check form-switch">
-  <input name ='fullcaps' class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault2">
-  <label class="form-check-label" for="switchCheckDefault">UPPERCASE</label>
-</div>
-<div class="form-check form-switch">
-  <input name ='newlineremover' class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault3">
-  <label class="form-check-label" for="switchCheckDefault">New Line Remover</label>
-</div>
-<div class="form-check form-switch">
-  <input name ='extraspaceremover' class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
-  <label class="form-check-label" for="switchCheckDefault">Extra Space Remover</label>
-</div>
-<div class="form-check form-switch">
-  <input name ='charcount' class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault5">
-  <label class="form-check-label" for="switchCheckDefault">Character Count</label>
-</div>
-<button type="submit" class="btn btn-dark mt-3">Analyze Text</button>
- </form>
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
