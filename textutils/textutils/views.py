@@ -8,12 +8,12 @@ def index(request):
     # return HttpResponse("hello")
 
 def analyze(request):
-    djtext = request.GET.get('text','default')
-    removepunc = request.GET.get('removepunc','off')
-    fullcaps = request.GET.get('fullcaps','off')   
-    newlineremover = request.GET.get('newlineremover','off')
-    spaceremover = request.GET.get('spaceremover','off')    
-    charcount = request.GET.get('charcount','off')
+    djtext = request.POST.get('text','default')
+    removepunc = request.POST.get('removepunc','off')
+    fullcaps = request.POST.get('fullcaps','off')   
+    newlineremover = request.POST.get('newlineremover','off')
+    spaceremover = request.POST.get('spaceremover','off')    
+    charcount = request.POST.get('charcount','off')
     
     if removepunc == "on":
         punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
